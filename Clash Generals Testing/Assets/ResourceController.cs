@@ -23,9 +23,9 @@ public class ResourceController : MonoBehaviour
         resourceBar.value += value;
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        Modify(regenValue);
+        Modify(regenValue * Time.deltaTime);
     }
 
     public float GetValue()
