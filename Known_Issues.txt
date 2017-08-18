@@ -1,0 +1,2 @@
+- SimpleAI currently targets anything with a rigidbody. Need to add checks to ensure potential targets are valid and have the Unit script before attempting to target it.
+- Deployment script needs major overhaul. Currently deploys units at any location, but should only deploy a unit dropped onto the map area. Deploying a unit in an invalid location should fail and refund the spent resources.

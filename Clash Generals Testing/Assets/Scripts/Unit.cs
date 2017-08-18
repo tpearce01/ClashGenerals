@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Unit : MonoBehaviour
 {
-
     public int health;
     public int maxHealth;
 
@@ -28,10 +27,13 @@ public class Unit : MonoBehaviour
     {
         //healthSlider.enabled = true;  //Show health bar once health has been modified to reflect changes, if any
         health += value;
-        Mathf.Clamp(health, 0, maxHealth);
+        Mathf.Clamp(health, -1, maxHealth);
 
         healthSlider.value = (float) health/maxHealth;
         SetColor(healthSlider.value);
+        if (health <= 0) {
+            Kill();
+        }
     }
 
     void SetColor(float value) {
