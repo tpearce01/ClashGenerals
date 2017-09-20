@@ -32,6 +32,11 @@ public class SimpleAI : MonoBehaviour{
 	}
 
     void Attack(){
+        if (target == null) {
+            ResetTarget();
+            return;
+        }
+
         if (inAttackRange){
             if (attackTimer <= 0){
                 attackTimer = attackSpeed;  //Reset timer for next attack

@@ -8,7 +8,7 @@ public class EnterAttackRange : MonoBehaviour {
     SimpleAI target;
 
     void OnTriggerEnter(Collider other) {
-        Debug.Log("Attacking Target");
+        //Debug.Log("Attacking Target");
         target.inAttackRange = true;
         target.nav.ResetPath();
     }

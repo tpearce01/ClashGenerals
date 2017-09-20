@@ -8,7 +8,7 @@ public class EnterAggroRange : MonoBehaviour {
     SimpleAI target;
 
     void OnTriggerEnter(Collider other) {
-        Debug.Log("Found Target");
+        //Debug.Log("Found Target");
         target.inAggroRange = true;
         target.nav.destination = other.gameObject.transform.position;
         target.target = other.gameObject.GetComponent<Unit>();
