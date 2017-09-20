@@ -367,11 +367,10 @@ MonoBehaviour:
   attackType: 0
   inAttackRange: 0
   inAggroRange: 0
-  attackSpeed: 1
+  attackSpeed: 0.3
   target: {fileID: 0}
   nav: {fileID: 195423266806329280}
-  moveSpeed: 1
-  damage: 30
+  damage: 2
   destination: {x: 0, y: 0, z: 5.5}
 --- !u!114 &114574514321022180
 MonoBehaviour:
